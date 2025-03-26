@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661254445948",
+    "project_id": "shop-giay-the-thao",
+    "storage_bucket": "shop-giay-the-thao.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661254445948:android:31222bc612b3993a3622f9",
+        "android_client_info": {
+          "package_name": "com.example.shopgiaythethao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh3Lj9KD6qqPTv9ti3JrBMNY8zj1QW-8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
