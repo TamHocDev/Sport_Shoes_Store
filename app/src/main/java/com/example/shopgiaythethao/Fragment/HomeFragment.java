@@ -1,8 +1,10 @@
 package com.example.shopgiaythethao.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ import android.content.Context;
 import android.view.inputmethod.InputMethodManager;
 
 import com.example.shopgiaythethao.Activity.MainActivity;
+import com.example.shopgiaythethao.Activity.SearchResultsActivity;
 import com.example.shopgiaythethao.Adapter.CategoryAdapter;
 import com.example.shopgiaythethao.Adapter.PopularAdapter;
 import com.example.shopgiaythethao.Adapter.SliderAdapter;
@@ -88,38 +91,24 @@ public class HomeFragment extends Fragment {
     }
 
     private void setupSearchFunctionality() {
-        // Add text change listener for real-time filtering
-        binding.edtSearching.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // Not needed
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Filter when text changes
-                if (popularAdapter != null) {
-                    popularAdapter.filter(s.toString());
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                // Not needed
-            }
-        });
-
-        // Handle search action (when user presses enter/search on keyboard)
         binding.edtSearching.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH ||
                     (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-                // Hide keyboard
-                InputMethodManager imm = (InputMethodManager) requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                // Lấy query từ EditText
+                String query = binding.edtSearching.getText().toString().trim();
 
-                // Filter with the current text
-                if (popularAdapter != null) {
-                    popularAdapter.filter(binding.edtSearching.getText().toString());
+                if (!query.isEmpty()) {
+                    // Ẩn bàn phím
+                    InputMethodManager imm = (InputMethodManager) requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+
+                    // Log để kiểm tra giá trị query
+                    Log.d("HomeFragment", "Search query: " + query);
+
+                    // Chuyển đến SearchResultsActivity với query
+                    Intent intent = new Intent(getActivity(), SearchResultsActivity.class);
+                    intent.putExtra("searchQuery", query);
+                    startActivity(intent);
                 }
                 return true;
             }

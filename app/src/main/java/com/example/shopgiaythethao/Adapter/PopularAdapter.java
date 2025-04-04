@@ -20,6 +20,7 @@ import com.example.shopgiaythethao.databinding.ViewholderPopularBinding;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
@@ -71,6 +72,12 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
     @Override
     public int getItemCount() {
         return items.size();
+    }
+
+    // Add this method to your existing PopularAdapter class
+    public void updateData(List<ItemsModel> newItems) {
+        this.items = new ArrayList<>(newItems);
+        notifyDataSetChanged();
     }
 
     /**

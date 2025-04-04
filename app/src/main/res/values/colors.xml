@@ -16,4 +16,11 @@
     <color name="primary">#6033BA</color>
     <color name="primary_dark">#4A2690</color>
     <color name="accent">#FFA500</color>
+    <color name="text_secondary">#757575</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="chip_background_color">@android:color/transparent</color>
+    <color name="chip_stroke_color">@color/colorPrimary</color>
+    <color name="colorPrimary">#DC6F31</color> <!-- Hoặc màu chính của ứng dụng bạn -->
+
 </resources>
