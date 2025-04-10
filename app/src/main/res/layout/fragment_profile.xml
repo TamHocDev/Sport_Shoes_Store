@@ -101,13 +101,6 @@
                             app:iconPadding="4dp"
                             style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
                     </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/btnSetting"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:padding="8dp"
-                        app:srcCompat="@drawable/settings_icon" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 

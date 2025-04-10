@@ -35,6 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     private TextInputEditText etName, etEmail, etPhone, etPassword, etConfirmPassword;
     private CheckBox cbTerms;
     private Button btnSignup;
+    private View loadingOverlay;
     private TextView tvLoginPrompt;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
@@ -65,6 +66,7 @@ public class SignUpActivity extends AppCompatActivity {
         cbTerms = findViewById(R.id.cb_terms);
         btnSignup = findViewById(R.id.btn_signup);
         tvLoginPrompt = findViewById(R.id.tv_login_prompt);
+        loadingOverlay = findViewById(R.id.loading_overlay);
 
         // Set onClickListeners
         ivBack.setOnClickListener(v -> finish());
@@ -73,7 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
             // Navigate to LoginActivity
             Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
             startActivity(intent);
-            finish();
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
         btnSignup.setOnClickListener(v -> signUp());
@@ -135,6 +137,8 @@ public class SignUpActivity extends AppCompatActivity {
             Toast.makeText(this, "Vui lòng đồng ý với Điều khoản và Điều kiện", Toast.LENGTH_SHORT).show();
             return;
         }
+        showLoading();
+        btnSignup.setEnabled(false);
 
         // Create user with email and password
         mAuth.createUserWithEmailAndPassword(email, password)
@@ -158,6 +162,7 @@ public class SignUpActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
+                        hideLoading();
                     }
                 });
     }
@@ -191,7 +196,39 @@ public class SignUpActivity extends AppCompatActivity {
             // Navigate to MainActivity or another appropriate screen
             Intent intent = new Intent(SignUpActivity.this, MainActivity.class);  // Replace MainActivity.class with your actual main activity
             startActivity(intent);
-            finish();
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }
+    }
+    // Phương thức hiển thị loading
+    private void showLoading() {
+        loadingOverlay.setVisibility(View.VISIBLE);
+
+        // Thêm animation fade in cho loading overlay
+        loadingOverlay.setAlpha(0f);
+        loadingOverlay.animate()
+                .alpha(1f)
+                .setDuration(200)
+                .start();
+    }
+
+    // Phương thức ẩn loading
+    private void hideLoading() {
+        // Thêm animation fade out trước khi ẩn
+        loadingOverlay.animate()
+                .alpha(0f)
+                .setDuration(200)
+                .withEndAction(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadingOverlay.setVisibility(View.GONE);
+                        btnSignup.setEnabled(true);
+                    }
+                })
+                .start();
+    }
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 }

@@ -61,10 +61,6 @@ public class ProfileFragment extends Fragment {
     }
 
     private void setupClickListeners() {
-        // Settings button click
-        binding.btnSetting.setOnClickListener(v -> {
-            Toast.makeText(requireContext(), "Settings clicked", Toast.LENGTH_SHORT).show();
-        });
 
         // Order History click
         binding.orderHistoryLayout.setOnClickListener(v -> {
