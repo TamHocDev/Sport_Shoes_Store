@@ -1,0 +1,654 @@
+{
+  "Banner": [
+    {
+      "url": "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742313624/banner1_vytoif.png"
+    },
+    {
+      "url": "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742313143/banner_wc4yrl.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742313144/banner2_jhsjgt.jpg"
+    }
+  ],
+  "Category": [
+    {
+      "id": 0,
+      "title": "All"
+    },
+    {
+      "id": 1,
+      "title": "Nike"
+    },
+    {
+      "id": 2,
+      "title": "Adidas"
+    },
+    {
+      "id": 3,
+      "title": "Puma"
+    },
+    {
+      "id": 4,
+      "title": "Mcqueen"
+    },
+    {
+      "id": 5,
+      "title": "Vans"
+    },
+    {
+      "id": 6,
+      "title": "Balenciaga"
+    }
+  ],
+  "Items": {
+    "0": {
+      "category": "Nike",
+      "description": "Dòng sản phẩm mới \"Athletic Department\" của Nike lấy cảm hứng từ thẩm mỹ và các yếu tố đặc trưng của thập niên 1970. Gần đây, bảng màu \"Sport Royal\" đã được thêm vào bộ sưu tập không ngừng mở rộng này thông qua mẫu giày Air Force 1. Thiết kế của Bruce Kilgore nổi bật với phong cách cổ điển. Từ lớp bọt hở ở lưỡi giày cho đến chữ in khối và các đường chỉ may lộ ra ngoài, cả đôi giày mang đậm dấu ấn của những thập kỷ đã qua. Màu kem bao phủ lớp da mịn của phần thân giày, hài hòa với dây giày và lớp lót bên trong, trong khi lưỡi giày màu vanilla nhạt gợi nhớ đến kết cấu của dòng Blazer.",
+      "id": 0,
+      "offPercent": "41%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742444273/shoe1_ku2fyh.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448773/s1_t5g8ez.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448774/s2_slartw.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448773/s3_ijxulb.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448773/s4_xcuo8a.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448773/s5_d8yiyl.png"
+      ],
+      "price": 500000,
+      "rating": 4.8,
+      "review": 32,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Air Force 1 Shadow"
+    },
+    "1": {
+      "category": "Nike",
+      "description": "Nike Jordan 1 High mang đến sự kết hợp hoàn hảo giữa phong cách đường phố và di sản bóng rổ. Đôi giày này nổi bật với thiết kế cổ cao đặc trưng, sử dụng chất liệu da cao cấp cùng các đường nét tinh tế. Phần đế giày được trang bị công nghệ Air êm ái, mang lại cảm giác thoải mái trong từng bước đi. Logo Swoosh của Nike và biểu tượng cánh Jordan tạo điểm nhấn mạnh mẽ, phù hợp với những ai yêu thích sự cá tính và năng động.",
+      "id": 1,
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448847/shoe2_aomnho.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448847/s1_o3vguf.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448848/s2_oltfut.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448848/s3_qk1c9x.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448847/s4_rz58fk.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448847/s5_yytj5m.png"
+      ],
+      "price": 550000,
+      "rating": 4.1,
+      "review": 45,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Jordan 1 High"
+    },
+    "2": {
+      "category": "Nike",
+      "description": "Jordan 1 Low Paris có thiết kế phần thân giày từ các chất liệu vải dệt, da và da lộn với tông màu chủ đạo trắng, Sky Grey (xám trời) và Football Grey (xám bóng đá). Phần da trơn trắng xuất hiện tối giản trên các điểm bên hông giày, tạo nên sự thanh thoát cho thiết kế. Vành cổ và lưỡi giày được làm từ chất liệu thể thao đặc trưng, và logo \"Air Jordan\" dập nổi cùng với dấu Swoosh của Nike màu xám là điểm nhấn hoàn thiện tổng thể. Có thể nói đây là một trong những phối màu trông Fresh nhất của nhà Air Jordan\n\nJordan 1 Low Paris được ra mắt vào tháng 2 năm 2020",
+      "id": 2,
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448916/shoe3_moxeao.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448917/s1_eplj1l.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448918/s2_v1awq3.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448919/s3_y1s5dd.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448916/s4_yzszog.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448917/s5_xiivhm.png"
+      ],
+      "price": 550000,
+      "rating": 4.5,
+      "review": 10,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Air Jordan 1 Low Paris"
+    },
+    "3": {
+      "category": "Nike",
+      "description": "Jordan 1 Low Travis Scott LV là phiên bản collab độc đáo giữa Nike và rapper Travis Scott, lấy cảm hứng từ phong cách xa xỉ của Louis Vuitton. Đôi giày sở hữu thiết kế táo bạo với logo Swoosh ngược đặc trưng, kết hợp chất liệu da lộn và da bóng cao cấp. Tông màu nâu đất chủ đạo cùng các chi tiết khâu tỉ mỉ mang lại vẻ ngoài sang trọng nhưng vẫn đậm chất streetwear. Đây là lựa chọn hoàn hảo cho những tín đồ thời trang cá tính.",
+      "id": 3,
+      "offPercent": "28%",
+      "oldPrice": 900000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448954/shoe4_pisjt3.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448955/s1_jwq62p.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448955/s2_quib7m.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448956/s3_n5uiw2.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448953/s4_jywlel.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448953/s5_zpdz6w.png"
+      ],
+      "price": 650000,
+      "rating": 4.2,
+      "review": 7,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Jordan 1 Low Travis Scott LV"
+    },
+    "4": {
+      "category": "Nike",
+      "description": "Nike Air Jordan 4 Retro Pine Green mang đậm dấu ấn cổ điển của dòng Jordan 4 với điểm nhấn là tông màu xanh lá Pine Green nổi bật. Phần thân giày được làm từ da cao cấp kết hợp lưới thoáng khí, đem lại sự thoải mái và bền bỉ. Đệm Air ở đế giày hỗ trợ tối ưu cho các hoạt động hàng ngày, trong khi các chi tiết như dây giày đồng điệu và logo Jumpman tạo nên vẻ ngoài hài hòa, phù hợp cho cả thể thao và thời trang đường phố.",
+      "id": 4,
+      "offPercent": "25%",
+      "oldPrice": 1000000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448991/shoe5_u4zcrg.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448992/s1_vvjus5.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448993/s2_cuhmxd.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448995/s3_korkrp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448990/s4_ryqgwg.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742448990/s5_allqbo.png"
+      ],
+      "price": 750000,
+      "rating": 5,
+      "review": 67,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Air Jordan 4 Retro Pine Green"
+    },
+    "5": {
+      "category": "Nike",
+      "description": "Nike SB Force 58 là sự kết hợp giữa phong cách trượt ván hiện đại và thiết kế cổ điển. Đôi giày sở hữu lớp da lộn bền bỉ cùng các chi tiết đục lỗ thoáng khí ở phần thân. Đế giày cao su dẻo dai mang lại độ bám tuyệt vời, lý tưởng cho các động tác trượt ván hoặc đi bộ hàng ngày. Với form giày ôm chân và màu sắc trung tính, Nike SB Force 58 dễ dàng phối đồ, phù hợp với mọi phong cách.",
+      "id": 5,
+      "offPercent": "29%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449027/shoe6_ofkfbm.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449028/s1_winbuv.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449029/s2_rhtpty.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449030/s3_m4thk8.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449025/s4_lif0ta.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449026/s5_yxalpa.png"
+      ],
+      "price": 600000,
+      "rating": 4.5,
+      "review": 14,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Giày Nike SB Force 58"
+    },
+    "6": {
+      "category": "Nike",
+      "description": "Nike Zoom A188 Cam là mẫu giày thể thao nổi bật với tông màu cam rực rỡ, lấy cảm hứng từ sự năng động và trẻ trung. Đôi giày được trang bị công nghệ Zoom Air, mang lại độ đàn hồi và cảm giác êm ái vượt trội. Phần thân giày kết hợp da tổng hợp và vải lưới, tạo sự thoáng khí và bền bỉ. Logo Swoosh nổi bật cùng các đường khâu chắc chắn giúp đôi giày trở thành điểm nhấn hoàn hảo cho phong cách cá nhân.",
+      "id": 6,
+      "offPercent": "23%",
+      "oldPrice": 650000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449066/shoe7_p4otko.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449067/s1_gyo3ss.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449069/s2_egqglj.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449070/s3_wnv1wu.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449064/s4_pursr5.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449065/s5_j4nxc3.png"
+      ],
+      "price": 500000,
+      "rating": 4.7,
+      "review": 16,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Zoom A188 Cam"
+    },
+    "7": {
+      "category": "Nike",
+      "description": "Nike Air Force 1 ID Gucci là phiên bản tùy chỉnh độc đáo, lấy cảm hứng từ thương hiệu xa xỉ Gucci. Đôi giày nổi bật với tông màu xanh-đỏ đặc trưng, kết hợp chất liệu da cao cấp và các chi tiết in họa tiết sang trọng. Đệm Air ở đế giày mang lại sự thoải mái tối ưu, trong khi thiết kế cổ thấp tạo cảm giác linh hoạt. Đây là sự lựa chọn lý tưởng cho những ai yêu thích sự giao thoa giữa thời trang cao cấp và phong cách đường phố.",
+      "id": 7,
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449106/shoe8_catk5g.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449107/s1_mo6g3n.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449109/s2_jtq5rg.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449110/s3_nxnewj.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449104/s4_p5jqgp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449105/s5_rttby1.png"
+      ],
+      "price": 550000,
+      "rating": 4.9,
+      "review": 47,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Air Force 1 ID Gucci"
+    },
+    "8": {
+      "category": "Nike",
+      "description": "Nike Jordan 1 Low SE Woven nổi bật với thiết kế đan lát (woven) độc đáo ở phần thân giày, tạo nên vẻ ngoài hiện đại và khác biệt. Sử dụng chất liệu da và vải cao cấp, đôi giày mang lại độ bền cùng sự thoáng khí tối ưu. Tông màu trung tính kết hợp logo Swoosh và Jumpman tinh tế, khiến Jordan 1 Low SE Woven trở thành lựa chọn hoàn hảo cho phong cách thời trang năng động và sáng tạo.",
+      "id": 8,
+      "offPercent": "29%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449142/shoe9_edeuzp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449143/s1_zwwfgm.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449145/s2_gypi2n.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449146/s3_defrhp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449139/s4_z2cjcy.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449141/s5_cl6eqm.png"
+      ],
+      "price": 600000,
+      "rating": 4.5,
+      "review": 6,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Jordan 1 Low SE Woven"
+    },
+    "9": {
+      "category": "Nike",
+      "description": "Nike Jordan 1 Low Sashiko lấy cảm hứng từ kỹ thuật may truyền thống Nhật Bản, với các đường chỉ khâu lộ độc đáo trên thân giày. Chất liệu da cao cấp kết hợp tông màu xanh denim và trắng tạo nên vẻ ngoài thanh lịch nhưng không kém phần cá tính. Đệm Air ở đế giày mang lại sự thoải mái, trong khi logo Swoosh và Jumpman được bố trí tinh tế, phù hợp với những ai yêu thích sự giao thoa giữa văn hóa và thời trang.",
+      "id": 9,
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449187/shoe10_e2xlp8.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449189/s1_iboa2b.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449190/s2_wpoycr.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449192/s3_jo3hqe.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449185/s4_ira7iu.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449186/s5_hqpyej.png"
+      ],
+      "price": 550000,
+      "rating": 4.2,
+      "review": 2,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Nike Jordan 1 Low Sashiko"
+    },
+    "10": {
+      "category": "Adidas",
+      "description": "Adidas Ultrabounce là mẫu giày chạy bộ đa năng với thiết kế tối giản nhưng đầy hiệu quả. Phần đế giày ứng dụng công nghệ Bounce, mang lại độ đàn hồi và hỗ trợ tối ưu cho từng bước chạy. Thân giày làm từ vải lưới thoáng khí kết hợp các lớp phủ tổng hợp, đảm bảo độ bền và sự thoải mái. Với màu sắc năng động và form giày ôm chân, Adidas Ultrabounce là lựa chọn lý tưởng cho cả thể thao và phong cách hàng ngày.",
+      "id": 10,
+      "offPercent": "28%",
+      "oldPrice": 900000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449245/shoe1_qyhrap.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449247/s1_pahxtl.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449251/s2_dupxzc.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449249/s3_uh6kb9.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449242/s4_yhlqnp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449243/s5_gkkhtk.png"
+      ],
+      "price": 650000,
+      "rating": 4.3,
+      "review": 13,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Giày Adidas Ultrabounce"
+    },
+    "11": {
+      "category": "Adidas",
+      "description": "Adidas AlphaEdge Xám Cam nổi bật với sự kết hợp màu sắc xám trung tính và cam rực rỡ, mang lại vẻ ngoài hiện đại và bắt mắt. Đôi giày sử dụng công nghệ đế Boost êm ái, hỗ trợ tối đa khi vận động. Thân giày làm từ vải lưới thoáng khí và các chi tiết gia cố chắc chắn, phù hợp cho chạy bộ hoặc tập luyện. Logo 3 sọc đặc trưng của Adidas tạo điểm nhấn tinh tế cho tổng thể thiết kế.",
+      "id": 11,
+      "offPercent": "25%",
+      "oldPrice": 1000000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449278/shoe2_hluicd.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449279/s1_liwznv.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449281/s2_ngjpjb.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449283/s3_mn8mzi.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449285/s4_wnk8qt.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449276/s5_erpffn.png"
+      ],
+      "price": 750000,
+      "rating": 5,
+      "review": 34,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas AlphaEdge Xám Cam"
+    },
+    "12": {
+      "category": "Adidas",
+      "description": "Adidas Superstar Trắng Kẻ Đen Mũi Sò là phiên bản kinh điển của dòng Superstar với mũi giày cao su hình vỏ sò đặc trưng. Thân giày làm từ da cao cấp màu trắng, điểm xuyết bởi 3 sọc đen và logo Adidas tinh tế. Đế giày cao su bền bỉ mang lại độ bám tốt, trong khi lót giày êm ái đảm bảo sự thoải mái suốt ngày dài. Đây là đôi giày không thể thiếu cho phong cách thời trang đường phố.",
+      "id": 12,
+      "offPercent": "33%",
+      "oldPrice": 700000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449357/shoe3_mgis8j.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449359/s1_eqtir9.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449361/s2_ggsawz.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449363/s3_ukzx0d.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449354/s4_iv7oim.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449355/s5_flvded.png"
+      ],
+      "price": 500000,
+      "rating": 4.6,
+      "review": 85,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas Superstar Trắng Kẻ Đen Mũi Sò"
+    },
+    "13": {
+      "category": "Adidas",
+      "description": "Adidas A153 Xám Xanh mang phong cách thể thao hiện đại với tông màu xám và xanh lá nhẹ nhàng. Thân giày làm từ vải lưới thoáng khí kết hợp da lộn, tạo cảm giác nhẹ nhàng và bền bỉ. Đế giày cao su linh hoạt hỗ trợ tốt cho các hoạt động hàng ngày. Logo 3 sọc và các chi tiết khâu tỉ mỉ làm nổi bật thiết kế, phù hợp cho cả tập luyện và dạo phố.",
+      "id": 13,
+      "offPercent": "23%",
+      "oldPrice": 650000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449431/shoe4_haj3un.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449435/s1_gtbfhw.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449433/s2_shnfww.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449435/s3_mkvjsr.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449437/s4_wvlomv.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449430/s5_kb2jjx.png"
+      ],
+      "price": 500000,
+      "rating": 4.9,
+      "review": 25,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas A153 Xám Xanh"
+    },
+    "14": {
+      "category": "Adidas",
+      "description": "Adidas Samba OG Sand Strata là phiên bản cải tiến của dòng Samba huyền thoại, với tông màu cát (Sand Strata) độc đáo. Thân giày làm từ da lộn mềm mại kết hợp da cao cấp, mang lại vẻ ngoài tinh tế và bền bỉ. Đế giày cao su Gum đặc trưng cung cấp độ bám vượt trội, trong khi logo 3 sọc vàng ánh kim tạo điểm nhấn sang trọng. Đôi giày này là sự lựa chọn hoàn hảo cho phong cách cổ điển pha lẫn hiện đại.",
+      "id": 14,
+      "offPercent": "33%",
+      "oldPrice": 750000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449486/shoe5_qza2au.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449488/s1_asgmna.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449490/s2_ptwjxr.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449493/s3_lmzxwx.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449482/s4_szo8j7.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449484/s5_dqnaov.png"
+      ],
+      "price": 500000,
+      "rating": 4,
+      "review": 20,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas Samba OG Sand Strata"
+    },
+    "15": {
+      "category": "Adidas",
+      "description": "Adidas Superstar X Yu Nagaba là phiên bản collab với nghệ sĩ Nhật Bản Yu Nagaba, nổi bật với thiết kế tối giản và họa tiết vẽ tay độc đáo. Thân giày làm từ da trắng cao cấp, kết hợp mũi sò đặc trưng và đế cao su bền bỉ. Logo 3 sọc được thay bằng các chi tiết nghệ thuật tinh tế, mang lại vẻ ngoài mới mẻ cho dòng Superstar kinh điển. Đây là đôi giày lý tưởng cho những ai yêu thích sự sáng tạo.",
+      "id": 15,
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449528/shoe6_xqlduf.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449531/s1_k5m8yr.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449533/s2_i2yi98.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449535/s3_wsgre3.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449524/s4_ykaq89.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449526/s5_qwp9e3.png"
+      ],
+      "price": 550000,
+      "rating": 4.1,
+      "review": 8,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas Superstar X Yu Nagaba"
+    },
+    "16": {
+      "category": "Adidas",
+      "description": "Adidas Alphabounce Beyond là mẫu giày chạy bộ hiệu suất cao với thiết kế ôm chân và hỗ trợ tối ưu. Đế giày Bounce mang lại độ đàn hồi vượt trội, trong khi thân giày làm từ vải lưới thoáng khí kết hợp lớp phủ tổng hợp bền bỉ. Tông màu trung tính cùng logo 3 sọc tinh tế giúp đôi giày dễ dàng phối đồ, phù hợp cho cả thể thao và phong cách thường ngày.",
+      "id": 16,
+      "offPercent": "40%",
+      "oldPrice": 1000000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449638/shoe7_uf0pel.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449640/s1_k8zbk7.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449643/s2_xk4zp8.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449645/s3_me7oj5.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449634/s4_y4k666.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449636/s5_rthcqf.png"
+      ],
+      "price": 600000,
+      "rating": 4.2,
+      "review": 7,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas Alphabounce Beyond"
+    },
+    "17": {
+      "category": "Adidas",
+      "description": "Adidas Forum 84 là phiên bản tái hiện dòng giày bóng rổ kinh điển từ thập niên 80, với thiết kế cổ cao mạnh mẽ. Thân giày làm từ da cao cấp kết hợp các chi tiết đục lỗ thoáng khí, mang lại sự thoải mái và bền bỉ. Đế giày cao su chắc chắn cùng dây đeo cổ chân tạo điểm nhấn cổ điển. Với tông màu trung tính, Forum 84 là lựa chọn hoàn hảo cho phong cách retro hiện đại.",
+      "id": 17,
+      "offPercent": "29%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449680/shoe8_fzxpkp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449683/s1_k5jy6p.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449685/s2_zja33m.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449688/s3_jmkzjv.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449676/s4_uqrmbn.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449678/s5_vs3ku5.png"
+      ],
+      "price": 600000,
+      "rating": 4.3,
+      "review": 28,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Giày Adidas Forum 84"
+    },
+    "18": {
+      "category": "Adidas",
+      "description": "Adidas Alphabounce Instinct M mang đến sự kết hợp giữa hiệu suất và phong cách với công nghệ đế Bounce êm ái. Thân giày làm từ vải lưới thoáng khí, được gia cố bằng các lớp phủ tổng hợp, tạo độ bền và hỗ trợ tối ưu khi vận động. Tông màu hiện đại cùng logo 3 sọc tinh tế giúp đôi giày phù hợp cho cả chạy bộ và phong cách hàng ngày.",
+      "id": 18,
+      "offPercent": "30%",
+      "oldPrice": 1000000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449735/shoe9_fkzerk.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449738/s1_eka39x.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449740/s2_gofahv.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449743/s3_nwjjtk.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449731/s4_qwnvpg.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449733/s5_ryenlq.png"
+      ],
+      "price": 700000,
+      "rating": 5,
+      "review": 9,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Adidas Alphabounce Instinct M"
+    },
+    "19": {
+      "category": "Adidas",
+      "description": "Adidas Equipment Plus là mẫu giày thể thao nổi bật với thiết kế tối giản nhưng đầy chức năng. Đế giày ứng dụng công nghệ Boost, mang lại sự thoải mái và hỗ trợ vượt trội. Thân giày làm từ vải lưới kết hợp da tổng hợp, tạo sự thoáng khí và bền bỉ. Logo 3 sọc và các chi tiết khâu tỉ mỉ làm nổi bật phong cách hiện đại, phù hợp cho mọi hoạt động.",
+      "id": 19,
+      "offPercent": "25%",
+      "oldPrice": 1000000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449813/shoe10_ay62ux.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449816/s1_vfmgmp.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449818/s2_uvucer.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449821/s3_cahauu.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449808/s4_u1bl2y.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1742449811/s5_ipzupo.png"
+      ],
+      "price": 750000,
+      "rating": 4.9,
+      "review": 45,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Giày Adidas Equipment Plus"
+    },
+    "20": {
+      "category": "Puma",
+      "description": "Giày Puma Suede Da Lộn Xanh Biển nổi bật với tông màu xanh biển tươi sáng, được làm từ chất liệu da lộn cao cấp. Đế giày cao su bền bỉ mang lại độ bám tốt, trong khi lót giày êm ái đảm bảo sự thoải mái suốt ngày dài. Logo Puma vàng ánh kim tạo điểm nhấn tinh tế, giúp đôi giày dễ dàng phối với nhiều phong cách thời trang từ năng động đến thanh lịch.",
+      "id": 20,
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743516720/shoe1_grqpid.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743516720/s1_ukvbd4.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743516720/s2_kwpyfb.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743516720/s3_nwpomd.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743516721/s4_eoxnca.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743516721/s5_bvcyko.png"
+      ],
+      "price": 550000,
+      "rating": 4.5,
+      "review": 23,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Giày Puma Suede Da Lộn Xanh Biển"
+    },
+    "-OMqySmktBZt_5ESIe2I": {
+      "category": "Puma",
+      "description": "Puma SE (thương hiệu chính thức là PUMA) là một công ty đa quốc gia lớn của Đức chuyên sản xuất giày và các dụng cụ thể thao khác có trụ sở tại Herzogenaurach, Bavaria, Đức. Từ 1996, thương hiệu Puma đã mở rộng hoạt động sang thị trường Mỹ. Từ 2007, Puma SE trở thành một phần của tập đoàn sản xuất hàng xa xỉ Pháp Kering. Giày được làm từ chất liệu da lộn cao cấp, bền đẹp trong suốt quá trình sử dụng. Lót giày êm ái giúp bạn luôn cảm thấy thoải mái cho dù có đi giày cả ngày dài. Logo Puma đặt tinh tế trên đôi giày tạo điểm nhấn nổi bật.\n\nForm giày đi lên chân vừa vặn, các đường chỉ khâu vô cùng chắc chắn và tỉ mỉ đảm bảo hài lòng mọi khách hàng. Màu sắc đơn giản dễ dàng kết hợp với nhiều trang phục khác nhau theo sở thích bản thân tạo nên 1 set đồ đẹp khi đi chơi, đi học hay dạo phố...",
+      "offPercent": "35%",
+      "oldPrice": 850000,
+      "picUrl": [
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743604922/shoe2_jrlx6t.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743604921/s1_fu1wsu.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743604923/s2_vycttc.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743604922/s3_gdydit.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743604921/s4_izx92t.png",
+        "https://res.cloudinary.com/dsdxtfswo/image/upload/v1743604921/s5_hh1tna.png"
+      ],
+      "price": 550000,
+      "rating": 4,
+      "review": 12,
+      "size": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "title": "Giày Puma Suede Da Lộn Tím"
+    }
+  },
+  "users": {
+    "6teukzLY2OdIyuZBNlPvQmRjE8W2": {
+      "createdAt": 1743518608726,
+      "email": "admin@gmail.com",
+      "name": "Admin",
+      "phoneNumber": "0888666999",
+      "userId": "6teukzLY2OdIyuZBNlPvQmRjE8W2"
+    },
+    "ANg5VhNx0nPKKgDm0JqLmT95l8P2": {
+      "createdAt": 1742305002974,
+      "email": "tamtrandinh@gmail.com",
+      "name": "tran dinh tam",
+      "phoneNumber": "0123456789",
+      "userId": "ANg5VhNx0nPKKgDm0JqLmT95l8P2"
+    }
+  }
+}
