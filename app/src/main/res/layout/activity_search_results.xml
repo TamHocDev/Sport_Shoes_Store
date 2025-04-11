@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGrey"
+    android:layout_marginTop="30dp"
     tools:context=".Activity.SearchResultsActivity">
 
-    <!-- Toolbar with Elevated Card -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/toolbarCard"
         android:layout_width="match_parent"
@@ -42,7 +42,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <!-- Trở lại EditText đơn giản nhưng với thiết kế đẹp hơn -->
                 <EditText
                     android:id="@+id/searchEditText"
                     android:layout_width="0dp"
@@ -79,7 +78,6 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Filter Chips in Card -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/filtersCard"
         android:layout_width="match_parent"
@@ -142,7 +140,6 @@
         </HorizontalScrollView>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Result Count and Sort -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/resultInfoCard"
         android:layout_width="match_parent"
@@ -172,7 +169,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- Trở lại TextView đơn giản nhưng với thiết kế đẹp hơn -->
             <TextView
                 android:id="@+id/sortByTxt"
                 android:layout_width="wrap_content"
@@ -190,7 +186,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- RecyclerView for Search Results -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchRecyclerView"
         android:layout_width="match_parent"
@@ -205,7 +201,6 @@
         app:layout_constraintTop_toBottomOf="@+id/resultInfoCard"
         tools:listitem="@layout/viewholder_search_result" />
 
-    <!-- Empty State View -->
     <LinearLayout
         android:id="@+id/emptyStateLayout"
         android:layout_width="match_parent"
@@ -247,7 +242,6 @@
 
     </LinearLayout>
 
-    <!-- Loading Indicator -->
     <ProgressBar
         android:id="@+id/loadingIndicator"
         android:layout_width="wrap_content"

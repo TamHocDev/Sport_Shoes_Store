@@ -45,13 +45,13 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        // Initialize Firebase Auth
+        // Khởi tạo Firebase Authentication
         mAuth = FirebaseAuth.getInstance();
 
-        // Initialize Firebase Database
+        // Khởi tạo Firebase Realtime Database
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        // Initialize views
+        // Ánh xạ các view từ layout
         ivBack = findViewById(R.id.iv_back);
         tilName = findViewById(R.id.til_name);
         tilEmail = findViewById(R.id.til_email);
@@ -68,19 +68,22 @@ public class SignUpActivity extends AppCompatActivity {
         tvLoginPrompt = findViewById(R.id.tv_login_prompt);
         loadingOverlay = findViewById(R.id.loading_overlay);
 
-        // Set onClickListeners
+        // Xử lý sự kiện khi nhấn nút quay lại
         ivBack.setOnClickListener(v -> finish());
 
+        // Xử lý sự kiện khi nhấn dòng "Đã có tài khoản?"
         tvLoginPrompt.setOnClickListener(v -> {
-            // Navigate to LoginActivity
+            // Chuyển sang màn hình đăng nhập
             Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
 
+        // Xử lý sự kiện khi nhấn nút Đăng ký
         btnSignup.setOnClickListener(v -> signUp());
     }
 
+    // Phương thức xử lý đăng ký tài khoản
     private void signUp() {
         String name = etName.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
@@ -88,12 +91,12 @@ public class SignUpActivity extends AppCompatActivity {
         String password = etPassword.getText().toString().trim();
         String confirmPassword = etConfirmPassword.getText().toString().trim();
 
-        // Validate inputs
+        // Kiểm tra dữ liệu nhập vào
         if (TextUtils.isEmpty(name)) {
             tilName.setError("Họ và tên không được để trống");
             return;
         } else {
-            tilName.setError(null); // Clear the error
+            tilName.setError(null); // Xóa thông báo lỗi nếu có
         }
 
         if (TextUtils.isEmpty(email)) {
@@ -137,42 +140,46 @@ public class SignUpActivity extends AppCompatActivity {
             Toast.makeText(this, "Vui lòng đồng ý với Điều khoản và Điều kiện", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        // Hiển thị overlay loading
         showLoading();
         btnSignup.setEnabled(false);
 
-        // Create user with email and password
+        // Tạo người dùng với email và mật khẩu
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+                            // Đăng ký thành công
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(SignUpActivity.this, "Đăng ký thành công!",
-                                    Toast.LENGTH_SHORT).show();
-                            // Save user information to Firebase Realtime Database
+                            Toast.makeText(SignUpActivity.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
+
+                            // Lưu thông tin người dùng vào Realtime Database
                             saveUserInfo(user, name, email, phone);
 
                             updateUI(user);
                         } else {
-                            // If sign in fails, display a message to the user.
+                            // Đăng ký thất bại
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(SignUpActivity.this, "Đăng ký thất bại: " + task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
+                        // Ẩn overlay loading
                         hideLoading();
                     }
                 });
     }
 
+    // Phương thức lưu thông tin người dùng vào Realtime Database
     private void saveUserInfo(FirebaseUser user, String name, String email, String phone) {
         if (user != null) {
             String userId = user.getUid();
             DatabaseReference userRef = mDatabase.child("users").child(userId);
 
-            // Create a User object
+            // Tạo đối tượng người dùng
             UserModel newUser = new UserModel(userId, name, email, phone);
 
             userRef.setValue(newUser)
@@ -180,9 +187,9 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Log.d(TAG, "User information saved to database");
+                                Log.d(TAG, "Lưu thông tin người dùng thành công");
                             } else {
-                                Log.w(TAG, "Failed to save user information.", task.getException());
+                                Log.w(TAG, "Lưu thông tin người dùng thất bại", task.getException());
                                 Toast.makeText(SignUpActivity.this, "Lỗi khi lưu thông tin người dùng.",
                                         Toast.LENGTH_SHORT).show();
                             }
@@ -191,19 +198,19 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
+    // Cập nhật giao diện sau khi đăng ký thành công
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            // Navigate to MainActivity or another appropriate screen
-            Intent intent = new Intent(SignUpActivity.this, MainActivity.class);  // Replace MainActivity.class with your actual main activity
+            // Chuyển đến màn hình chính
+            Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         }
     }
-    // Phương thức hiển thị loading
+
+    // Hiển thị lớp phủ loading với hiệu ứng mờ dần
     private void showLoading() {
         loadingOverlay.setVisibility(View.VISIBLE);
-
-        // Thêm animation fade in cho loading overlay
         loadingOverlay.setAlpha(0f);
         loadingOverlay.animate()
                 .alpha(1f)
@@ -211,9 +218,8 @@ public class SignUpActivity extends AppCompatActivity {
                 .start();
     }
 
-    // Phương thức ẩn loading
+    // Ẩn lớp phủ loading với hiệu ứng mờ dần
     private void hideLoading() {
-        // Thêm animation fade out trước khi ẩn
         loadingOverlay.animate()
                 .alpha(0f)
                 .setDuration(200)
@@ -226,6 +232,8 @@ public class SignUpActivity extends AppCompatActivity {
                 })
                 .start();
     }
+
+    // Gọi khi kết thúc Activity, kèm hiệu ứng chuyển cảnh
     @Override
     public void finish() {
         super.finish();

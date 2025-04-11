@@ -203,8 +203,6 @@ public class SearchViewModel extends ViewModel {
                 break;
 
             case NEWEST:
-                // Giả sử không có trường date, nên không thực hiện gì
-                // Nếu có trường date, thì sẽ sắp xếp theo date
                 break;
 
             case PRICE_ASC:
@@ -225,7 +223,7 @@ public class SearchViewModel extends ViewModel {
                     String off1 = item1.getOffPercent() != null ? item1.getOffPercent() : "0%";
                     String off2 = item2.getOffPercent() != null ? item2.getOffPercent() : "0%";
 
-                    // Trích xuất số phần trăm từ chuỗi (ví dụ: "20%" -> 20)
+                    // Trích xuất số phần trăm từ chuỗi
                     int percent1 = parseDiscountPercent(off1);
                     int percent2 = parseDiscountPercent(off2);
 

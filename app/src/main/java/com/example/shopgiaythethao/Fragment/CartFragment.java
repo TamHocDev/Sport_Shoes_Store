@@ -35,7 +35,7 @@ public class CartFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Initialize view binding
+        // Khởi tạo view binding
         binding = FragmentCartBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -44,15 +44,15 @@ public class CartFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Initialize cart management
+        // Khởi tạo quản lý giỏ hàng
         managmentCart = new ManagmentCart(requireContext());
 
-        // Initialize UI
+        // Khởi tạo giao diện người dùng
         updateCartUI();
         setVariable();
         setupSearchFunctionality();
 
-        // Set up back button click listener
+        // Thiết lập sự kiện khi nhấn nút quay lại
         binding.btnBack.setOnClickListener(v -> {
             navigateToHome();
         });
@@ -62,12 +62,11 @@ public class CartFragment extends Fragment {
         binding.edtSearching.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // Not needed
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Filter cart items when text changes
+                // Lọc các sản phẩm trong giỏ khi văn bản thay đổi
                 if (cartAdapter != null && !managmentCart.getListCart().isEmpty()) {
                     cartAdapter.filter(s.toString());
                 }
@@ -75,18 +74,17 @@ public class CartFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                // Not needed
             }
         });
 
-        // Handle search action (when user presses enter/search on keyboard)
+        // Xử lý hành động tìm kiếm (khi người dùng nhấn enter/tìm trên bàn phím)
         binding.edtSearching.setOnEditorActionListener((v, actionId, event) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                // Hide keyboard
+                // Ẩn bàn phím
                 InputMethodManager imm = (InputMethodManager) requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
 
-                // Apply filter
+                // Áp dụng bộ lọc
                 if (cartAdapter != null && !managmentCart.getListCart().isEmpty()) {
                     cartAdapter.filter(binding.edtSearching.getText().toString());
                 }
@@ -98,11 +96,11 @@ public class CartFragment extends Fragment {
 
     private void updateCartUI() {
         if (managmentCart.getListCart().isEmpty()) {
-            // Show empty cart message
+            // Hiển thị thông báo giỏ hàng trống
             binding.emptyTxt.setVisibility(View.VISIBLE);
             binding.emptyTxt.setText("Giỏ hàng của bạn đang trống");
 
-            // Center the empty message in the screen
+            // Căn giữa thông báo giỏ hàng trống trên màn hình
             FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
@@ -110,19 +108,19 @@ public class CartFragment extends Fragment {
             params.gravity = android.view.Gravity.CENTER;
             binding.emptyTxt.setLayoutParams(params);
 
-            // Hide the cart content
+            // Ẩn nội dung giỏ hàng
             binding.scrollViewCart.setVisibility(View.GONE);
         } else {
-            // Hide empty cart message
+            // Ẩn thông báo giỏ hàng trống
             binding.emptyTxt.setVisibility(View.GONE);
 
-            // Show the cart content
+            // Hiển thị nội dung giỏ hàng
             binding.scrollViewCart.setVisibility(View.VISIBLE);
 
-            // Setup recycler view
+            // Thiết lập RecyclerView
             setupCartRecyclerView();
 
-            // Calculate and display cart totals
+            // Tính toán và hiển thị tổng tiền giỏ hàng
             calculatorCart();
         }
     }
@@ -130,14 +128,14 @@ public class CartFragment extends Fragment {
     private void setupCartRecyclerView() {
         binding.cartView.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false));
         cartAdapter = new CartAdapter(managmentCart.getListCart(), requireContext(), () -> {
-            // This is the callback for when cart items change
+            // Đây là callback khi các mục trong giỏ thay đổi
             calculatorCart();
 
-            // Check if cart is now empty after item removal
+            // Kiểm tra xem giỏ hàng có rỗng sau khi xoá mục không
             if (managmentCart.getListCart().isEmpty()) {
                 updateCartUI();
             } else {
-                // Update adapter with latest cart items
+                // Cập nhật adapter với danh sách giỏ hàng mới nhất
                 cartAdapter.updateCartItems(managmentCart.getListCart());
             }
         });
@@ -147,13 +145,13 @@ public class CartFragment extends Fragment {
     private void setVariable() {
         binding.btnOrder.setOnClickListener(v -> {
             if (!managmentCart.getListCart().isEmpty()) {
-                // Clear cart after checkout
+                // Xoá giỏ hàng sau khi đặt hàng
                 clearCart();
 
-                // Show success message
+                // Hiển thị thông báo thành công
                 Toast.makeText(requireContext(), "Đặt hàng thành công! Cảm ơn bạn đã mua sắm.", Toast.LENGTH_SHORT).show();
 
-                // Navigate to home screen
+                // Quay về màn hình chính
                 navigateToHome();
             } else {
                 Toast.makeText(requireContext(), "Giỏ hàng của bạn đang trống", Toast.LENGTH_SHORT).show();
@@ -164,18 +162,18 @@ public class CartFragment extends Fragment {
     private void navigateToHome() {
         if (getActivity() instanceof MainActivity) {
             MainActivity mainActivity = (MainActivity) getActivity();
-            // Select the home tab in bottom navigation
+            // Chọn tab trang chủ trong thanh điều hướng dưới
             mainActivity.selectTab(R.id.home);
         }
     }
 
     private void clearCart() {
-        // Get current cart items
+        // Lấy các mục hiện tại trong giỏ hàng
         if (managmentCart != null) {
-            // Clear all items one by one
+            // Xoá từng mục trong giỏ hàng
             while (!managmentCart.getListCart().isEmpty()) {
                 managmentCart.minusItem(managmentCart.getListCart(), 0, () -> {
-                    // Do nothing in this callback
+
                 });
             }
         }
@@ -195,6 +193,6 @@ public class CartFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null; // Avoid memory leaks
+        binding = null; // Tránh rò rỉ bộ nhớ
     }
 }
