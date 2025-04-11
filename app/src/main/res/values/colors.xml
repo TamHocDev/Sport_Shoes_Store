@@ -21,6 +21,6 @@
     <color name="text_primary">#212121</color>
     <color name="chip_background_color">@android:color/transparent</color>
     <color name="chip_stroke_color">@color/colorPrimary</color>
-    <color name="colorPrimary">#DC6F31</color> <!-- Hoặc màu chính của ứng dụng bạn -->
+    <color name="colorPrimary">#DC6F31</color>
 
 </resources>

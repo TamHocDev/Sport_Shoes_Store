@@ -118,7 +118,6 @@
                     android:orientation="horizontal"
                     android:padding="16dp">
 
-                    <!-- Đơn hàng -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -148,7 +147,6 @@
                         android:layout_height="match_parent"
                         android:background="@color/lightGrey"/>
 
-                    <!-- Yêu thích -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -178,7 +176,6 @@
                         android:layout_height="match_parent"
                         android:background="@color/lightGrey"/>
 
-                    <!-- Đánh giá -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -229,7 +226,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Lịch sử đơn hàng -->
                     <LinearLayout
                         android:id="@+id/orderHistoryLayout"
                         android:layout_width="match_parent"
@@ -268,7 +264,6 @@
                         android:layout_marginStart="56dp"
                         android:background="@color/lightGrey" />
 
-                    <!-- Danh sách yêu thích -->
                     <LinearLayout
                         android:id="@+id/wishlistLayout"
                         android:layout_width="match_parent"
@@ -307,7 +302,6 @@
                         android:layout_marginStart="56dp"
                         android:background="@color/lightGrey" />
 
-                    <!-- Địa chỉ giao hàng -->
                     <LinearLayout
                         android:id="@+id/addressesLayout"
                         android:layout_width="match_parent"
@@ -353,7 +347,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <!-- Menu cài đặt -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -366,7 +359,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Thông báo -->
                     <LinearLayout
                         android:id="@+id/notificationsLayout"
                         android:layout_width="match_parent"
@@ -405,7 +397,6 @@
                         android:layout_marginStart="56dp"
                         android:background="@color/lightGrey" />
 
-                    <!-- Hỗ trợ -->
                     <LinearLayout
                         android:id="@+id/supportLayout"
                         android:layout_width="match_parent"
@@ -444,7 +435,6 @@
                         android:layout_marginStart="56dp"
                         android:background="@color/lightGrey" />
 
-                    <!-- Ngôn ngữ -->
                     <LinearLayout
                         android:id="@+id/languageLayout"
                         android:layout_width="match_parent"
@@ -487,7 +477,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Nút đăng xuất -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogOut"
                 android:layout_width="match_parent"

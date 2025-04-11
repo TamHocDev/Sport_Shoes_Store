@@ -2,6 +2,5 @@
     <string name="app_name">ShopGiayTheThao</string>
     <string name="intro_title"><font color="#5b4cbd">XSHOP</font>\nthế giới giày thể thao</string>
     <string name="intro_text">Hơn 10 năm phát triển, XSHOP luôn mang đến những mẫu giày chất lượng tốt nhất với giá cả hợp lí nhất đến tay người tiêu dùng với hệ thống cửa hàng Số 1 Hà Nội và bán online khắp Việt Nam.</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

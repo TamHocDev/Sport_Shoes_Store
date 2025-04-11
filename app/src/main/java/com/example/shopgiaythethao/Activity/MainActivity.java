@@ -23,13 +23,11 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Set default fragment (Home)
         if (savedInstanceState == null) {
             binding.bottomNavigation.setItemSelected(R.id.home, true);
             setFragment(new HomeFragment());
         }
 
-        // Setup bottom navigation
         setupBottomNavigation();
 
     }
