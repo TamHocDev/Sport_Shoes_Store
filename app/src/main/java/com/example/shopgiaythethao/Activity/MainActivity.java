@@ -11,7 +11,7 @@ import com.example.shopgiaythethao.Fragment.HomeFragment;
 import com.example.shopgiaythethao.Fragment.ProfileFragment;
 import com.example.shopgiaythethao.R;
 import com.example.shopgiaythethao.databinding.ActivityMainBinding;
-import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+
 
 public class MainActivity extends AppCompatActivity {
 
