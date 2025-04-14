@@ -2,21 +2,14 @@ package com.example.shopgiaythethao.Activity;
 
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.view.View;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import com.bumptech.glide.Glide;
 import com.example.shopgiaythethao.Adapter.PicListAdapter;
 import com.example.shopgiaythethao.Adapter.SizeAdapter;
 import com.example.shopgiaythethao.Domain.ItemsModel;
 import com.example.shopgiaythethao.Helper.ManagmentCart;
-import com.example.shopgiaythethao.R;
 import com.example.shopgiaythethao.databinding.ActivityDetailBinding;
 
 import java.text.NumberFormat;
